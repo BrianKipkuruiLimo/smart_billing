@@ -1,0 +1,18 @@
+# --- Basic assignments ---
+base = 100
+units = 80
+rate = 3.5
+isPeak = true
+surcharge = 40
+
+# --- Arithmetic and conditional logic ---
+total = base + (units * rate) + (isPeak ? surcharge : 0)
+discountedBill = (units < 100 ? total * 0.9 : total)
+penalty = units > 100 && !isLowIncome ? 500 : 0
+bill += penalty + 200
+
+# --- Error checks ---
+divError = 10 / 0
+undefinedVar = x + 5
+
+forecastBill = forecast(units)
